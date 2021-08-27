@@ -34,7 +34,7 @@ yarn start
 - Remover tarea
 - Editar tarea
 
-###front
+## front
 
 - Utilizar librearias React + Redux
 - Validar que los controles de entradas sean obligatorios
