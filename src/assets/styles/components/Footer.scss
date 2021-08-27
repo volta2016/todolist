@@ -1,0 +1,8 @@
+.footer {
+	color: map-get($colorMap, greylight);
+	text-align: center;
+	& small {
+		padding: 5rem 0 0 0;
+		display: block;
+	}
+}

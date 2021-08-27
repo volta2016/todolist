@@ -1,0 +1,79 @@
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0.25;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	75% {
+		opacity: 0.75;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.loading-container {
+	position: initial;
+	height: auto;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& figure img {
+		transform-origin: 50% 50%;
+		animation: spin 4s infinite linear, fadeIn 2s infinite linear;
+		width: 130px;
+		margin: 1.2rem 0;
+	}
+	& div {
+		text-align: center;
+	}
+	& p {
+		margin: 0;
+		animation: fadeIn 2s infinite linear;
+		color: map-get($colorMap, whiteweather);
+	}
+}
+
+.loading-home {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: map-get($colorMap, MidnightBlue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& figure img {
+		transform-origin: 50% 50%;
+		animation: spin 4s infinite linear, fadeIn 2s infinite linear;
+		width: 150px;
+	}
+	& div {
+		text-align: center;
+	}
+	& p {
+		margin: 1rem 0 0 0;
+		color: map-get($colorMap, greylight);
+		font-size: 1.2rem;
+	}
+}
+
+.loadingtxt {
+	height: 56px;
+	padding: 2.4rem 0;
+}

@@ -1,0 +1,28 @@
+/*******************/
+/*****Typography****/
+/*******************/
+$textSizeTokens: map-get($tokens, "textSize");
+$textWeightTokens: map-get($tokens, "textWeight");
+
+@mixin font($size, $type: "body") {
+	@if ($type == "body") {
+		font-size: map-get($textSizeTokens, $size);
+		font-weight: map-get($textWeightTokens, "light");
+	}
+	@if ($type == "heading") {
+		font-size: map-get($textSizeTokens, $size);
+		font-weight: map-get($textWeightTokens, "bold");
+	}
+}
+
+@mixin flexBetCen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin button-base {
+	color: map-get($colorMap, greylight);
+	padding: 0 18px;
+	cursor: pointer;
+}
