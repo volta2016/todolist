@@ -12,7 +12,8 @@ const Todos = (props) => {
 		setTodo(event.target.value);
 	};
 
-	const add = () => {
+	const add = (event) => {
+		event.preventDefault();
 		if (todo === "") {
 			alert("Input empty insert a task");
 		} else {
@@ -29,7 +30,7 @@ const Todos = (props) => {
 	return (
 		<div className="container my-s">
 			<h1>Todos</h1>
-			<div className="d-flex">
+			<form onSubmit={add} className="d-flex">
 				<input
 					type="text"
 					className="todo-input"
@@ -44,7 +45,7 @@ const Todos = (props) => {
 				>
 					<GoPlus />
 				</motion.button>
-			</div>
+			</form>
 		</div>
 	);
 };
