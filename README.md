@@ -1,8 +1,8 @@
 # Todo List - React JS
 
-Web App para crear listas de teareas
+Web App to create a list of tasks, use of Redux toolkit for management of the state, and Framer Motion for custom animation
 
-## Instalación
+## Installation
 
 ```
 yarn install
@@ -13,29 +13,29 @@ yarn start
 
 ![screenshot](https://raw.githubusercontent.com/volta2016/todolist/master/src/assets/img/screen-todolist.png)
 
-## Características
+## Features
 
-- Puedes añadir una nueva tarea
-- Borrar una tarea
-- Actualizar
-- Filtrar Tareas Completadas - Activas - Todos las tareas
+- You can add a new task
+- Delete a task
+- Refresh
+- Filter Completed Tasks - Active - All Tasks
 
-## Web app Construida con:
+## Web app Built with:
 
 - [React](https://reactjs.org/)
-- [Redux](https://redux.js.org/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
+- Redux](https://redux.js.org/)
+- Redux Toolkit](https://redux-toolkit.js.org/)
 - [Sass](https://sass-lang.com/)
 
-## Requerimientos
+## Requirements
 
-- Listar tareas
-- Agregar tarea
-- Remover tarea
-- Editar tarea
+- List tasks
+- Add task
+- Remove task
+- Edit task
 
-## front
+## front end
 
-- Utilizar librearias React + Redux
-- Validar que los controles de entradas sean obligatorios
-- Crear pruebas iniatrias
+- Use React + Redux libraries
+- Validate that input controls are mandatory
+- Create unit tests
